@@ -5,7 +5,7 @@ Usage:
   remote-to-local-backup (-h | --help)
 
 Arguments:
-  SERVER        Remote server from which to backup. It is assumed the passwordless authentication using public SSH key has already been set up
+  SERVER      Remote server from which to backup. It is assumed the passwordless authentication using public SSH key has already been set up
   USER        User id to login to remote server
   REMOTE_DIR  Full path of the remote directory to backup
   LOCAL_DIR   Full path of the local directory inside which the backup will be created. The name of the created local backup directory will be <remote_dir_name>-timestamp
