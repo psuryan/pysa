@@ -56,7 +56,6 @@ def recursive_copy(src, dest, sftp, total, count=1):
 def get_file_count(sftp, src, dir_count=1, file_count=0):
     for item in sftp.listdir_attr(src):
         item_name = str(item.filename)
-        print(item.filename, dir_count, file_count)
         if stat.S_ISDIR(item.st_mode):
             return get_file_count(sftp, src + "/" + item_name, dir_count+1, file_count)
         else:
